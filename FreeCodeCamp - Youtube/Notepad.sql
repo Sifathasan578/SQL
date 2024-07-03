@@ -1,340 +1,340 @@
-#1. Introduction
+--#1. Introduction
 ------------------
 
-SQL is a language which is used to interact with Relational Database Management System (RDBMS).
+--SQL is a language which is used to interact with Relational Database Management System (RDBMS).
 
-RDBMS is just a software application which we can use to create and manage different databases.
+--RDBMS is just a software application which we can use to create and manage different databases.
 
-#2. What is a Database (DB)?
+--#2. What is a Database (DB)?
 -----------------------------
 
-Any collection of related information. e.g.:
-    Phonebook
-    Shopping List
-    Todo List
-    Your 5 best friends
-    Facebook's User Base
+--Any collection of related information. e.g.:
+--    Phonebook
+--    Shopping List
+--    Todo List
+--    Your 5 best friends
+--    Facebook's User Base
 
-Databases can be stored in different ways. e.g.:
-    On paper
-    In your mind
-    On a computer (Most common use cases)
-    This powerpoint
-    Comments Section
+-- Databases can be stored in different ways. e.g.:
+--     On paper
+--     In your mind
+--     On a computer (Most common use cases)
+--     This powerpoint
+--     Comments Section
 
-DB is a collection of related information that can be stored in different ways. 
+-- DB is a collection of related information that can be stored in different ways. 
 
-Computer + Databases = <3
+-- Computer + Databases = <3
 
-Amazon.com (DB)
-    Keeps track of Products, Reviews, Purchase Orders, Credit Cards, Users, Media, etc
+-- Amazon.com (DB)
+--     Keeps track of Products, Reviews, Purchase Orders, Credit Cards, Users, Media, etc
 	
-	Trillions of pieces of information need to be stored and readily available
+-- 	Trillions of pieces of information need to be stored and readily available
 	
-	Information is extremely valuable and critical to Amazon.com's functioning 
+-- 	Information is extremely valuable and critical to Amazon.com's functioning 
 	
-	Security is essential, Amazon stores peoples personal information 
-	    Credit card #, SSN, Address, phone
-	Information is stored on a computer
+-- 	Security is essential, Amazon stores peoples personal information 
+-- 	    Credit card #, SSN, Address, phone
+-- 	Information is stored on a computer
 	
-vs
+-- vs
 
-Shopping List (DB)
-	Keeps track of consumer products that need to be purchased
+-- Shopping List (DB)
+-- 	Keeps track of consumer products that need to be purchased
 	
-	10-20 pieces of information need to be stored and  readily available
+-- 	10-20 pieces of information need to be stored and  readily available
 	
-	Information is for convenience sake only and not necessary for shopping
+-- 	Information is for convenience sake only and not necessary for shopping
 	
-	Security is not important
+-- 	Security is not important
 	
-	Information is stored on a piece of paper, even just in someone's memory
+-- 	Information is stored on a piece of paper, even just in someone's memory
 	
-P.S. Computers are great at keeping track of large amounts of information.
+-- P.S. Computers are great at keeping track of large amounts of information.
 
 
 
-Database Management Systems (DBMS)
+-- Database Management Systems (DBMS)
     
-Defination: A special software program that helps users create and maintain a database.
+-- Defination: A special software program that helps users create and maintain a database.
 
-	Makes it easy to manage large amounts of information 
+-- 	Makes it easy to manage large amounts of information 
 
-	Handles Security
+-- 	Handles Security
 
-	Backups
+-- 	Backups
 
-	Importing/ Exporting data
+-- 	Importing/ Exporting data
 
-	Concurrency
+-- 	Concurrency
 
-	Interacts with software applications
+-- 	Interacts with software applications
 		
-		Programming Languages
+-- 		Programming Languages
 			
 			
-Amazon.com Database Diagram
+-- Amazon.com Database Diagram
 
-... Picture ... 
+-- ... Picture ... 
 
-Amazon.com will interact with the DBMS in order to create read update and delete information. (CRUD - later)
+-- Amazon.com will interact with the DBMS in order to create read update and delete information. (CRUD - later)
 
 	    
-Amazon is not doing CRUD by their own. Its asking the DBMS to do it for them. 
+-- Amazon is not doing CRUD by their own. Its asking the DBMS to do it for them. 
 
 
-CRUD:
-	C = Create, Create information in the database
+-- CRUD:
+-- 	C = Create, Create information in the database
 	
-	R = Read / Retrieve, Reading information from the database
+-- 	R = Read / Retrieve, Reading information from the database
 	
-	U = Update, Updating the existing information
+-- 	U = Update, Updating the existing information
 	
-	D = Delete, deleting information that is already in there
+-- 	D = Delete, deleting information that is already in there
 	
 
-4 main operations we are going to be do with Database. 
+-- 4 main operations we are going to be do with Database. 
 
 
-Two types of Databases:
+-- Two types of Databases:
 
-1. Relational Databases (SQL)
+-- 1. Relational Databases (SQL)
 	
-	Organize data into one or more tables
+-- 	Organize data into one or more tables
 		
-		-> Each table has columns and rows
+-- 		-> Each table has columns and rows
 		
-		-> A unique key identifies each row
+-- 		-> A unique key identifies each row
 
 
-2. Non-Relational (noSQL / not just SQL)
+-- 2. Non-Relational (noSQL / not just SQL)
 	
-	Organize data is anything but a traditional table
+-- 	Organize data is anything but a traditional table
 	
-		-> Key-value stores
+-- 		-> Key-value stores
 		
-		-> Documents (JSON, XML, etc)
+-- 		-> Documents (JSON, XML, etc)
 		
-		-> Graphs
+-- 		-> Graphs
 		
-		-> Flexible Tables
+-- 		-> Flexible Tables
 
 
-Relational Databases (SQL) examples:
+-- Relational Databases (SQL) examples:
 
-	Student Table
+-- 	Student Table
 	
-		columns: *ID, Name, Major
+-- 		columns: *ID, Name, Major
 	
-	Users Table
+-- 	Users Table
 		
-		columns: *Username, Password, Email
+-- 		columns: *Username, Password, Email
 
-To create a Relational Database we need RDBMS. RDBMS help users create and maintain a relational database. Examples of RDBMS: mySQL, Oracle, postgreSQL, mariaDB, etc.
+-- To create a Relational Database we need RDBMS. RDBMS help users create and maintain a relational database. Examples of RDBMS: mySQL, Oracle, postgreSQL, mariaDB, etc.
 
-RDBMS uses Structured Query Language (SQL)
+-- RDBMS uses Structured Query Language (SQL)
 	
-	SQL is a standardized language for interacting with RDBMS
+-- 	SQL is a standardized language for interacting with RDBMS
 	
-	Uses to perform CRUD operations, as well as other administrative tasks (user management, security, backup, etc).
+-- 	Uses to perform CRUD operations, as well as other administrative tasks (user management, security, backup, etc).
 	
-	Used to define tables and structures
+-- 	Used to define tables and structures
 	
-	SQL code used on one RDBMS is not always portable to another without modification 
-	
-
-Non-Relational Databases (noSQL / not just SQL)
-
-	stores data in anything but a static table. Examples: document, graph, key-value hash, ...
-
-We can have Non-Relational Database Management Systems (NDBMS) which helps users to create and maintain a non-relational database. 
-
-Examples: mongoDB, dynamoDB, apache cassandra, firebase, etc.
-
-There isn't any standard language for interacting with the non-relational database. So, NRDBMS will implement its own language to perform the CRUD and  administrative operations on the database. 
-
-
-Database Queries: 
-	
-	Queries are requests made to the database management system for specific information
-	
-	As the database's structure become more and more complex, it becomes more difficult to get the specific pieces of information we want.
-	
-	A google search is a query 
-	
-Wrap-up:
-
-	DB is any collection of related information
-	
-	Computers are great for storing databases
-	
-	Database Management Systems (DBMS) make it easy to create, maintain and secure a database
-	
-	DBMS allow you to perform the CRUD operations and other administrative tasks
-	
-	Two types of databases: Relational & Non-Relational
-	
-	Relational databases use SQL and store data in tables with rows and columns
-	
-	Non-Relational data store data using other data structures
-
-#3. Tables & Keys
--------------------
-
-Student Table
-
-	student_id (PK),
-	name,
-	major
+-- 	SQL code used on one RDBMS is not always portable to another without modification 
 	
 
-All tables in RDBMS have columns. 
-	
-	columns will define a single attribute
-	
-	row is an individual entry
-	
+-- Non-Relational Databases (noSQL / not just SQL)
 
-Primary Key (PK) is basically an attribute which uniquely defines the row in the database. 
+-- 	stores data in anything but a static table. Examples: document, graph, key-value hash, ...
 
-User Table 
-	
-	email (PK),
-	password,
-	date_created
-	type
-	
-Employee Table
-	
-	emp_id (PK / SK), random number, surrogate key, this key has no mapping in the real world
-	
-	or emp_ssn (PK / NK), SSN = Social Security Number, Natural key, has a mapping or real purpose in the real world. 
-	
-	first_name
-	last_name
-	birth_date
-	sex
-	salary
+-- We can have Non-Relational Database Management Systems (NDBMS) which helps users to create and maintain a non-relational database. 
 
-Foreign Key: An attribute we can store on a database table that will link us to another database table. 
+-- Examples: mongoDB, dynamoDB, apache cassandra, firebase, etc.
 
-Employee Table
-
-	emp_id (PK)
-	first_name
-	last_name
-	birth_date
-	sex
-	salary
-	branch_id (FK), Foreign key, primary key of a different table 
-	super_id (FK), Supervisor ID, Who is the supervisor of a particular employee
-
-Employee belongs to a different branches. Two or more employee can be from a same branch. 
-
-Branch Table
-
-	branch_id (PK)
-	branch_name 
-	mgr_id (FK), manager id, Branch + Employee Relation
-	
-FK is just a way we can define relationship between two tables
-	
-	
-Branch Supplier Table
-	
-	branch_id (PK)
-	supplier_name (PK)
-	supply_type
-
-When primary key consists of two or more columns then it is called composite key. When one column is not enough to uniquely identify rows only then we need composite key. 
-
-Works_With: (How much papers an employee sales to a specific client)
-
-	emp_id (FK)
-	client_id (FK), both of these FK together make the PK for this table
-	total_sales
-	
-Client
-
-	client_id (PK)
-	client_name
-	branch_id
-
-#4. SQL Basics
-
-Standard Query Language (SQL)
-
-SQL is a language used for interacting with RDBMS.
-
-You can use SQL to get the RDBMS to do things for you:
-
-	Create, retrieve, update, delete data
-	
-	Create & manage database tables
-	
-	Design & create database tasks (security, 
-	user management, import/ export, etc)
-	
-RDBMS speaks Structured Query Language.
+-- There isn't any standard language for interacting with the non-relational database. So, NRDBMS will implement its own language to perform the CRUD and  administrative operations on the database. 
 
 
-SQL implementations vary between systems
+-- Database Queries: 
 	
-	Not all RDBMS follow the SQL standard to a 'T'
+-- 	Queries are requests made to the database management system for specific information
 	
-	The concepts are the same but the implementation may vary
+-- 	As the database's structure become more and more complex, it becomes more difficult to get the specific pieces of information we want.
+	
+-- 	A google search is a query 
+	
+-- Wrap-up:
+
+-- 	DB is any collection of related information
+	
+-- 	Computers are great for storing databases
+	
+-- 	Database Management Systems (DBMS) make it easy to create, maintain and secure a database
+	
+-- 	DBMS allow you to perform the CRUD operations and other administrative tasks
+	
+-- 	Two types of databases: Relational & Non-Relational
+	
+-- 	Relational databases use SQL and store data in tables with rows and columns
+	
+-- 	Non-Relational data store data using other data structures
+
+-- #3. Tables & Keys
+-- -------------------
+
+-- Student Table
+
+-- 	student_id (PK),
+-- 	name,
+-- 	major
 	
 
-SQL is actually a hybrid language, it's basically 4 types of languages in one
+-- All tables in RDBMS have columns. 
+	
+-- 	columns will define a single attribute
+	
+-- 	row is an individual entry
+	
 
-	DQL (Data Query Language)
-	
-	DDL (Data Defination Language)
-	
-	DCL (Data Control Language)
-	
-	DML (Data Manipulation Language)
-	
-Queries
+-- Primary Key (PK) is basically an attribute which uniquely defines the row in the database. 
 
-	A query is a set of instructions given to the RDBMS (written in SQL) that tell the RDBMS what information you want it to retrieve for you
+-- User Table 
 	
-		TONS of data in a DB
+-- 	email (PK),
+-- 	password,
+-- 	date_created
+-- 	type
+	
+-- Employee Table
+	
+-- 	emp_id (PK / SK), random number, surrogate key, this key has no mapping in the real world
+	
+-- 	or emp_ssn (PK / NK), SSN = Social Security Number, Natural key, has a mapping or real purpose in the real world. 
+	
+-- 	first_name
+-- 	last_name
+-- 	birth_date
+-- 	sex
+-- 	salary
+
+-- Foreign Key: An attribute we can store on a database table that will link us to another database table. 
+
+-- Employee Table
+
+-- 	emp_id (PK)
+-- 	first_name
+-- 	last_name
+-- 	birth_date
+-- 	sex
+-- 	salary
+-- 	branch_id (FK), Foreign key, primary key of a different table 
+-- 	super_id (FK), Supervisor ID, Who is the supervisor of a particular employee
+
+-- Employee belongs to a different branches. Two or more employee can be from a same branch. 
+
+-- Branch Table
+
+-- 	branch_id (PK)
+-- 	branch_name 
+-- 	mgr_id (FK), manager id, Branch + Employee Relation
+	
+-- FK is just a way we can define relationship between two tables
+	
+	
+-- Branch Supplier Table
+	
+-- 	branch_id (PK)
+-- 	supplier_name (PK)
+-- 	supply_type
+
+-- When primary key consists of two or more columns then it is called composite key. When one column is not enough to uniquely identify rows only then we need composite key. 
+
+-- Works_With: (How much papers an employee sales to a specific client)
+
+-- 	emp_id (FK)
+-- 	client_id (FK), both of these FK together make the PK for this table
+-- 	total_sales
+	
+-- Client
+
+-- 	client_id (PK)
+-- 	client_name
+-- 	branch_id
+
+-- #4. SQL Basics
+
+-- Standard Query Language (SQL)
+
+-- SQL is a language used for interacting with RDBMS.
+
+-- You can use SQL to get the RDBMS to do things for you:
+
+-- 	Create, retrieve, update, delete data
+	
+-- 	Create & manage database tables
+	
+-- 	Design & create database tasks (security, 
+-- 	user management, import/ export, etc)
+	
+-- RDBMS speaks Structured Query Language.
+
+
+-- SQL implementations vary between systems
+	
+-- 	Not all RDBMS follow the SQL standard to a 'T'
+	
+-- 	The concepts are the same but the implementation may vary
+	
+
+-- SQL is actually a hybrid language, it's basically 4 types of languages in one
+
+-- 	DQL (Data Query Language)
+	
+-- 	DDL (Data Defination Language)
+	
+-- 	DCL (Data Control Language)
+	
+-- 	DML (Data Manipulation Language)
+	
+-- Queries
+
+-- 	A query is a set of instructions given to the RDBMS (written in SQL) that tell the RDBMS what information you want it to retrieve for you
+	
+-- 		TONS of data in a DB
 		
-		Often hidden in a complex schema
+-- 		Often hidden in a complex schema
 		
-		Goal is to get the data you need
+-- 		Goal is to get the data you need
 		
-	e.g.:
+-- 	e.g.:
 	
-		SELECT employee.name, employee.age
-		FROM employee
-		WHERE employee.salary > 30000
+-- 		SELECT employee.name, employee.age
+-- 		FROM employee
+-- 		WHERE employee.salary > 30000
 
-#5. MySQL Windows Installation
+-- #5. MySQL Windows Installation
  
-... 
-Used PopSQL as interface to code. Very beautiful interface to code. 
-... 
+-- ... 
+-- Used PopSQL as interface to code. Very beautiful interface to code. 
+-- ... 
  
-#6. Creating Tables
------------------------
+-- #6. Creating Tables
+-- -----------------------
  
-Basic data types we will be using
+-- Basic data types we will be using
 	
-	INT - Whole Numbers
+	-- INT - Whole Numbers
 	
-	DECIMAL (M, N) - Decimal Numbers, M = total numbers of digits, N = numbers of digits you want to store after decimal point
+	-- DECIMAL (M, N) - Decimal Numbers, M = total numbers of digits, N = numbers of digits you want to store after decimal point
 	
-	VARCHAR (x) - String of text of length x
+	-- VARCHAR (x) - String of text of length x
 	
-	BLOB - Binary Large Object, Stores large binary data, images, files
+	-- BLOB - Binary Large Object, Stores large binary data, images, files
 	
-	DATE - 'YYYY-MM-DD'
+	-- DATE - 'YYYY-MM-DD'
 	
-	TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' Used for recording
+	-- TIMESTAMP - 'YYYY-MM-DD HH:MM:SS' Used for recording
 	
-// In order to create a table
+-- // In order to create a table
 create table student (
 	student_id int primary key,
 	name varchar(20), -- 20 characters are allocated
@@ -342,7 +342,7 @@ create table student (
 );
 
 
-or mentioning primary key later
+-- or mentioning primary key later
 
 
 create table student (
@@ -352,58 +352,58 @@ create table student (
 	primary key (student_id)	
 );
 
-// describes the table
-// shows columns, their data types, other info...
-describe student;
+-- // describes the table
+-- // shows columns, their data types, other info...
+-- describe student;
 
 
 
-// Delete the table
+-- // Delete the table
 drop table student;
 
 
-// Modify the table
-// add an extra column in the table
+-- // Modify the table
+-- // add an extra column in the table
 
 alter table student 
 add gpa decimal(3, 2); 
 
 
-// drop a specific column
+-- // drop a specific column
 alter table student 
 drop column gpa;
 
-#7. Inserting Data
+-- #7. Inserting Data
 -----------------------
 
 
-// inserting data into the table
+-- // inserting data into the table
 insert into student values (1, 'Jack', 'Biology');
 
 
-// To see the table
+-- // To see the table
 select * from student;
 
 
-insert into student values (2, 'Kate', 'Sociology');
+-- insert into student values (2, 'Kate', 'Sociology');
 
 
 
-// If we don't know data for a particular column then
-// Have no major
-// Inside the parenthesis mention the data you have
+-- // If we don't know data for a particular column then
+-- // Have no major
+-- // Inside the parenthesis mention the data you have
 
 insert into student(student_id, name) values (3, 'Claire');
 
-// Inside the major field it will show null
+-- // Inside the major field it will show null
 
-#8. Constraints
+-- #8. Constraints
 -------------------
 
 
-NOT NULL
+-- NOT NULL
 
-// a particular column of the table can not be null
+-- // a particular column of the table can not be null
 
 create table student (
 	student_id int, 
@@ -413,9 +413,9 @@ create table student (
 );
 
 
-UNIQUE
+-- UNIQUE
 
-// the data in that field must be unique for each data
+-- // the data in that field must be unique for each data
 
 create table student (
 	student_id int, 
@@ -424,8 +424,8 @@ create table student (
 	primary key (student_id)	
 );
 
-DEFAULT
-// If nothing inputted then this field will be the default value
+-- DEFAULT
+-- // If nothing inputted then this field will be the default value
 
 create table student (
 	student_id int, 
@@ -434,10 +434,10 @@ create table student (
 	primary key (student_id)	
 );
 
-AUTO_INCREMENT
-// data inputted in this field will automatically incremented
+-- AUTO_INCREMENT
+-- // data inputted in this field will automatically incremented
 
-#9. Update & Delete
+-- #9. Update & Delete
 --------------------
 
 update student
@@ -459,13 +459,13 @@ set major = "Socio"
 where major = "Sociology";
 
 
-// Other comparison operations
-	equals: =
-	*not equals: <>
-	greater than: >
-	less than: <
-	greater than or equal: >=
-	less than or equal: <= 
+-- // Other comparison operations
+-- 	equals: =
+-- 	*not equals: <>
+-- 	greater than: >
+-- 	less than: <
+-- 	greater than or equal: >=
+-- 	less than or equal: <= 
 	
 
 update student 
@@ -484,16 +484,16 @@ set name = "Tom", major = "undecided"
 where student_id = 1;
 
 
-// Set undecided major for all
+-- // Set undecided major for all
 update student
 set major = "undecided";
 
 
-// delete a specific row
+-- // delete a specific row
 delete from student
 where stdent_id = 5;
 
-// delete all rows inside the table, table will exist
+-- // delete all rows inside the table, table will exist
 delete from student;
 
 
@@ -502,7 +502,7 @@ where name = "Tom" and major = "undecided";
 
 select * from student;
 
-Temp Save:=================================
+-- Temp Save:=================================
 
 create table student (
     student_id int auto_increment,
@@ -576,35 +576,35 @@ delete from student;
 
 select * from student;
 
-Temp Save:===========================================
+-- Temp Save:===========================================
 
-#10. Basic Queries
+-- #10. Basic Queries
 -----------------------------
 
 select *
 from student
 
-// * means all information/ every column
-// instead of that we can specify a particular column
+-- // * means all information/ every column
+-- // instead of that we can specify a particular column
 
-// select all the names from student table
+-- // select all the names from student table
 
 select name 
 from student;
 
-// select all the names and majors from student table
+-- // select all the names and majors from student table
 select name, major
 from student;
 
-// We can prepend this for better understanding. Will help when we will be working on big schema
+-- // We can prepend this for better understanding. Will help when we will be working on big schema
 
 select student.name, student.major
 from student;
 
-// We can order the information 
-// will give by alphabetical order based on names 
-// by default this will be in ascending order (asc) 
-// but you can make them descending order (desc) 
+-- // We can order the information 
+-- // will give by alphabetical order based on names 
+-- // by default this will be in ascending order (asc) 
+-- // but you can make them descending order (desc) 
 
 select student.name, student.major
 from student
@@ -614,7 +614,7 @@ select student.name, student.major
 from student
 order by name asc; // by default
 
-// will show in descending order based on names
+-- // will show in descending order based on names
 select student.name, student.major
 from student
 order by student.name desc;
@@ -623,7 +623,7 @@ select student.name, student.major
 from student
 order by student_id desc; 
 
-// Order them by major first, then if any of them have same major it will order them by student_id
+-- // Order them by major first, then if any of them have same major it will order them by student_id
 
 select * 
 from student
@@ -633,21 +633,21 @@ select *
 from student
 order by major, student_id desc;
 
-// Limit the amount of result we are getting
-// will get 2 number of rows
+-- // Limit the amount of result we are getting
+-- // will get 2 number of rows
 
 select * 
 from student 
 order by student_id desc
 limit 2;
 
-// We can use where in select also
+-- // We can use where in select also
 
 select * 
 from student
 where major = "Biology";
 
-// Returning specific columns
+-- // Returning specific columns
 select name, major 
 from student
 where major = "Chemistry";
@@ -667,13 +667,13 @@ select name, major
 from student
 where student_id < 3;
 
-// student id less than or equal to 3 and name not equal to "Jack"
+-- // student id less than or equal to 3 and name not equal to "Jack"
 
 select *
 from student
 where student_id <= 3 and name <> "Jack";
 
-// 'in' keyword
+-- // 'in' keyword
 
 Select all students where name is the following:
 Claire, Kate, Mike and student_id > 2
@@ -687,29 +687,29 @@ select *
 from student
 where major in ('Biology', 'Chemistry') and student_id > 2;
 
-// Till now we have only worked on 1 table, but there are more complex schemas which works on multiple tables
+-- // Till now we have only worked on 1 table, but there are more complex schemas which works on multiple tables
 
-#11. Company Database Intro
+-- #11. Company Database Intro
 -------------------------------
 
-Till now you have pretty good fundamental knowledge of SQL.
+-- Till now you have pretty good fundamental knowledge of SQL.
 
-Employee Table
+-- Employee Table
 	
-	emp_id (PK),
-	first_name,
-	last_name,
-	birth_date,
-	sex,
-	salary,
-	super_id (FK), -- supervisor id
-	branch_id (FK)
+-- 	emp_id (PK),
+-- 	first_name,
+-- 	last_name,
+-- 	birth_date,
+-- 	sex,
+-- 	salary,
+-- 	super_id (FK), -- supervisor id
+-- 	branch_id (FK)
 	
 
-#12. Creating Company Database
+-- #12. Creating Company Database
 ----------------------------------
 
-// Employee Table
+-- // Employee Table
 
 create table employee (
     emp_id int primary key, -- employee id 
@@ -722,7 +722,7 @@ create table employee (
     branch_id int
 );
 
-// we can't make super_id and branch_id as foreign key just yet because the employee table and branch table technically just exist yet. 
+-- // we can't make super_id and branch_id as foreign key just yet because the employee table and branch table technically just exist yet. 
 
 create table branch (
     branch_id int primary key,
@@ -741,10 +741,10 @@ describe branch
 
 
 
-// Now, we will make branch_id and super_id as foreign keys which was pending.
+-- // Now, we will make branch_id and super_id as foreign keys which was pending.
 
-// branch_id points to brranch_id of branch table
-// super_id points to emp_id of employee table
+-- // branch_id points to brranch_id of branch table
+-- // super_id points to emp_id of employee table
 
 
 alter table employee
@@ -758,8 +758,8 @@ alter table employee
 add foreign key (super_id)
 references employee (emp_id)
 on delete set null;
-
-// Client Table
+-- 
+-- // Client Table
 
 create table client (
     client_id int primary key,
@@ -771,7 +771,7 @@ create table client (
     on delete set null
 );
 
-// Works_With Table
+-- // Works_With Table
 
 -- Works_With table
 -- it has composite primary key
@@ -850,7 +850,7 @@ select * from client;
 select * from works_with;
 select * from branch_supplier;
 
-#13. More Basic Queries
+-- #13. More Basic Queries
 ------------------------------------------
 
 
@@ -909,7 +909,7 @@ from employee;
 select distinct branch_id
 from employee;
 
-#14. Functions
+-- #14. Functions
 --------------------------------------
 
 -- SQL Functions
@@ -981,7 +981,7 @@ select sum(total_sales), client_id
 from works_with
 group by client_id;
 
-#15. Wildcards
+-- #15. Wildcards
 ---------------------------------
 
 
@@ -1015,7 +1015,7 @@ select *
 from client
 where client_name like '%school%';
 
-#16. Union
+-- #16. Union
 --------------------------------------
 
 
@@ -1063,7 +1063,7 @@ select sum(total_sales)
 from works_with;
 
 
-#17. Joins
+-- #17. Joins
 ----------------------------------------
 
 -- join is used to combine rows from two or more tables based on a related column between them
@@ -1097,8 +1097,8 @@ right join branch -- we will get all the information of the right table
 on employee.emp_id = branch.mgr_id;
 
 -- another join: full outer join: basically a left and right join combined 
-
-#18. Nested Queries
+-- 
+-- #18. Nested Queries
 ----------------------------------------
 
 -- is basically a query where we are going to be using multiple select statements in order to get the information 
@@ -1144,7 +1144,7 @@ where client.branch_id = (
 -- nested query can be more complex, only need practice 
 
 
-#19. On Delete
+-- #19. On Delete
 ----------------------------------------
 
 -- deleting entries in the database when they have foreign keys associated to them 
@@ -1174,7 +1174,7 @@ where branch_id = 2;
 -- here primary key can't be null as branch_id is a primary key 
 select * from branch_supplier; -- no branch_id = 2 left here 
 
-#20. Triggers (Need more work to be done)
+-- #20. Triggers (Need more work to be done)
 ---------------------------------------
 
 -- trigger is basically a block of sql code which we can write which will define a certain action that should happen when a certain operation gets performed on a database
@@ -1274,7 +1274,7 @@ insert into employee values(111, 'Pam', 'Beesly', '1998-02-19', 'F', 69000, 106,
 select * from trigger_test;
 
 
-#21. ER Diagram Intro
+-- #21. ER Diagram Intro
 ----------------------------------------
 
 
@@ -1292,16 +1292,16 @@ select * from trigger_test;
 -- video watching
 -- ...
 --
-#22. Designing an ER Diagram
+-- #22. Designing an ER Diagram
 -----------------------------------------
 
 -- Learning how to make an ER diagram 
 
-Need multiple watch 
+-- Need multiple watch 
 
 
-#23. Converting ER Diagrams to Schemas
+-- #23. Converting ER Diagrams to Schemas
 
 --------------------------------------
 
-Later 
+-- Later 
